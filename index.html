@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio | Connect With Me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fba329a0-2d5a-4232-9192-6a4604d2adf2.png" alt="My personal logo" class="h-10">
+                    <span class="text-xl font-bold text-blue-900">My Portfolio</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+
+
+                    <a href="#portfolio" class="hover:text-blue-600 transition">Portfolio</a>
+                    <a href="#about" class="hover:text-blue-600 transition">About</a>
+
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 md:pt-40 md:pb-32 bg-gradient-to-r from-blue-700 to-blue-900 text-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">Hello, I'm [Krishan Knhaiya Maurya]</h1>
+                    <p class="text-xl mb-8 opacity-90 delay-100 animate-fade-in">Check out my social media profiles and get in touch with me below.</p>
+                    <div class="flex space-x-4 delay-200 animate-fade-in">
+       
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-12 delay-300 animate-fade-in">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6332fdf8-fa37-4b30-b466-6075369403b1.png" alt="Team of professionals collaborating in a modern office with laptops and digital screens" class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section id="social" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Connect With Me</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Find me on these platforms</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <a href="https://www.linkedin.com/in/krishan-knhaiya-maurya" target="_blank" class="service-card bg-gray-50 p-8 rounded-xl transition duration-300 hover:bg-white text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fab fa-linkedin text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">LinkedIn</h3>
+                </a>
+                <a href="https://www.instagram.com/krishan_knhaiya" target="_blank" class="service-card bg-gray-50 p-8 rounded-xl transition duration-300 hover:bg-white text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fab fa-instagram text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Instagram</h3>
+                </a>
+                <a href="https://wa.me/9125746531" target="_blank" class="service-card bg-gray-50 p-8 rounded-xl transition duration-300 hover:bg-white text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fab fa-whatsapp text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">WhatsApp</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Portfolio</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">A showcase of our recent projects and success stories</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="portfolio-item relative rounded-xl overflow-hidden">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e5e046dd-22ac-4f4c-a734-9119feb5e205.png" alt="E-commerce website dashboard with product listings and analytics" class="w-full h-64 object-cover">
+                    <div class="portfolio-overlay absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 transition duration-300">
+                        <div class="text-center p-4 text-white">
+                            <h3 class="text-xl font-bold mb-2">E-Commerce Platform</h3>
+                            <p class="mb-4">Custom online store with integrated payment solutions</p>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item relative rounded-xl overflow-hidden">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/225dac85-10ee-4cfa-9147-4a142bf105c4.png" alt="Mobile banking app interface showing financial transactions" class="w-full h-64 object-cover">
+                    <div class="portfolio-overlay absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 transition duration-300">
+                        <div class="text-center p-4 text-white">
+                            <h3 class="text-xl font-bold mb-2">Banking App</h3>
+                            <p class="mb-4">Secure financial application for personal banking</p>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item relative rounded-xl overflow-hidden">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b4177756-bbba-4b58-a715-84430b4cae2d.png" alt="Healthcare management system with patient records and scheduling" class="w-full h-64 object-cover">
+                    <div class="portfolio-overlay absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 transition duration-300">
+                        <div class="text-center p-4 text-white">
+                            <h3 class="text-xl font-bold mb-2">Healthcare System</h3>
+                            <p class="mb-4">Comprehensive patient management platform</p>
+            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">View Full Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">About Me</h2>
+                    <p class="text-lg text-gray-600 mb-6">Hi, I'm [Krishan Knhaiya Maurya]. I specialize in [Graphics designing and web devoloping]. With [2] years of experience, I've helped clients achieve [Teaching and Creating].</p>
+                    <p class="text-lg text-gray-600 mb-8">My passion lies in [Teaching and Working for Company ]. When I'm not working, you can find me [Computer Teacher and Graphics Desingner].</p>
+                    <div class="flex space-x-4">
+                        <div class="text-center">
+                            <div class="text-4xl font-bold text-blue-600 mb-2">2+</div>
+                            <div class="text-gray-600">Clients</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold text-blue-600 mb-2">10+</div>
+                            <div class="text-gray-600">Projects</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold text-blue-600 mb-2">1+</div>
+                            <div class="text-gray-600">Team Members</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8ff1b53a-e11a-4014-974c-687768aea29c.png" alt="Professional team in a modern office space collaborating on a project" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
